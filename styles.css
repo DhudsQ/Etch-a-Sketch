@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    height: 100%;
+}
+body{
+    background: -webkit-linear-gradient(#fefa7c, #ff8d59);
+    background:    -moz-linear-gradient(#fefa7c, #ff8d59);
+    background:         linear-gradient(#fefa7c, #ff8d59);
+    padding: 10px 100px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tittle{
+    font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  text-align: center;
+}
+.paint-container{
+    border: 1px solid rgba(218, 217, 217, 0.91);
+    width: 35rem;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.row-div{
+    display: flex;
+    flex-direction: row;
+    
+    flex: 1;
+    
+}
+
+.paint-wall{
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.2s;
+}
+.tools-tittle{
+    font-family: cursive;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    
+}
+.tools{
+    border: 1px solid rgb(136, 135, 135);
+    padding: 20px;
+    background-color: #f7f7dd;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius:20px ;
+}
+.color{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+.color-choice{
+    width: 50px; 
+    height: 50px;
+    border: 1px solid #020202;
+    border-radius: 5px;
+}
+.content-container{
+    display: flex;
+    gap: 40px;
+}
+.range-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.option{
+    border-radius: 15px;
+    height: 50px;
+    font-size:20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+
+}
+
+.clean:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+}
+
+.random:hover{
+
+    background: linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 154, 0, 1) 10%,
+        rgba(208, 222, 33, 1) 20%,
+        rgba(79, 220, 74, 1) 30%,
+        rgba(63, 218, 216, 1) 40%,
+        rgba(47, 201, 226, 1) 50%,
+        rgba(28, 127, 238, 1) 60%,
+        rgba(95, 21, 242, 1) 70%,
+        rgba(186, 12, 248, 1) 80%,
+        rgba(251, 7, 217, 1) 90%,
+        rgba(255, 0, 0, 1) 100%
+    );
+    transform: scale(1.1);
+}
+
+.random.active{
+    background: linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 154, 0, 1) 10%,
+        rgba(208, 222, 33, 1) 20%,
+        rgba(79, 220, 74, 1) 30%,
+        rgba(63, 218, 216, 1) 40%,
+        rgba(47, 201, 226, 1) 50%,
+        rgba(28, 127, 238, 1) 60%,
+        rgba(95, 21, 242, 1) 70%,
+        rgba(186, 12, 248, 1) 80%,
+        rgba(251, 7, 217, 1) 90%,
+        rgba(255, 0, 0, 1) 100%
+    );
+}
+
+.draw-tools{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.tool-choice{
+    width: 50px;
+    height: 50px;
+    border: 4px solid rgb(116, 113, 113);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+
+}
+.tool-choice:hover{
+    background-color: #c3bcbc;
+    transform: scale(1.1);
+}
+
+.pencil.active{
+    background-color: #c3bcbc;
+}
+.eraser.active{
+    background-color: #c3bcbc;
+}
